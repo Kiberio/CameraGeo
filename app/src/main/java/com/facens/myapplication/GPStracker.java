@@ -21,12 +21,14 @@ public class GPStracker implements LocationListener {
     //
     public Location getLocation(){
 //
-        if(ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) !=
+        if(ContextCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED){
 //
             Toast.makeText(context, "Não foi permitir", Toast.LENGTH_SHORT).show();
             return null;
         }
+
+
         LocationManager lm = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         boolean isGPSEnabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
 //
