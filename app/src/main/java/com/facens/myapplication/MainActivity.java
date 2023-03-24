@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     //Substitui o valor das variaveis
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        //Trocar informações e imagens da foto
+        //Trocar informações e imagens da foto.
         if(requestCode == 1 && resultCode == RESULT_OK){
             Bundle extras = data.getExtras();
             Bitmap imagem = (Bitmap) extras.get("data");
