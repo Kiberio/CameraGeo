@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+  //test
     private ImageView imageViewFoto;
     private Button btnGeo;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     if(l != null){
                      double lat = l.getLatitude();
                      double lon = l.getLongitude();
-                        Toast.makeText(getApplicationContext(), "LATITUDE:" +lat+"/nLONGITUDE:"+lon,Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "LATITUDE:" +lat+"\n LONGITUDE:"+lon,Toast.LENGTH_LONG).show();
                     }
             }
         });
